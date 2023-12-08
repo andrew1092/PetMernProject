@@ -7,6 +7,8 @@ import HomeIcon from '@material-ui/icons/Home'
 import Button from '@material-ui/core/Button'
 import auth from './../auth/auth-helper'
 import {Link, withRouter} from 'react-router-dom'
+import logo from '../assets/images/logo.png';
+
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
@@ -27,6 +29,7 @@ const Menu = withRouter(({history}) => (
       <Typography variant="h6" color="inherit">
         GROUP 7
       </Typography>
+      <img src={logo} alt="Asia Mix" style={{marginLeft: '20px'}} height="50px"/>
       <div>
         <Link to="/">
           <IconButton aria-label="Home" style={isActive(history, "/")}>
