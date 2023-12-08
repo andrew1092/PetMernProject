@@ -24,6 +24,11 @@ export default defineConfig({
         target: `http://localhost:${PORT}`,
         changeOrigin: true,
       },
+      '/auth': {
+        target: `http://localhost:${PORT}`,
+        changeOrigin: true,
+      },
+     
     },
   },
   build: {
